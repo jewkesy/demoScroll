@@ -4,7 +4,7 @@
 	var downSpeed, upSpeed;
 
 	function init(){ 
-		downSpeed = parseInt(getUrlVars()['downSpeed']) || 15000;
+		downSpeed = parseInt(getUrlVars()['downSpeed']) || 50000;
 		upSpeed =  parseInt(getUrlVars()['upSpeed']) || 1000;
 		$('body').animate({ scrollTop: 0 }, upSpeed, function() {
 			loop();
